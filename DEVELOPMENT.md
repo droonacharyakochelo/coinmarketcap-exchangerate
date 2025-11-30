@@ -77,7 +77,7 @@ The module works with or without API keys:
 
 ### Node.js / TypeScript
 ```typescript
-import { PriceFetcher } from '@droonacharyakochelo/cmc-er';
+import { PriceFetcher } from '@droonacharyakochelo/coinmarketcap-exchangerate';
 
 const fetcher = new PriceFetcher();
 // OR Provide the API keys

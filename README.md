@@ -13,7 +13,7 @@ A TypeScript module to fetch cryptocurrency prices from CoinMarketCap API and fo
 
 ## Installation
 ```bash
-npm install cmc-er
+npm install coinmarketcap-exchangerate
 ```
 
 
@@ -22,7 +22,7 @@ npm install cmc-er
 ### Basic Usage
 
 ```typescript
-import { PriceFetcher } from '@droonacharyakochelo/cmc-er';
+import { PriceFetcher } from '@droonacharyakochelo/coinmarketcap-exchangerate';
 
 // Get API keys from environment variables or .env file
 // Or provide them manually here:
@@ -68,7 +68,7 @@ npm run example
 
 ### Using API Keys via Direct Assignment - not recommended 
 ```typescript
-import { PriceFetcher } from '@droonacharyakochelo/cmc-er';
+import { PriceFetcher } from '@droonacharyakochelo/coinmarketcap-exchangerate';
 
 // Provide API key as variable
 const cmcApiKey = 'your_coinmarketcap_api_key';

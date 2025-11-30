@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/droonacharyakochelo/cmc_er.git"
+    "url": "git+https://github.com/droonacharyakochelo/coinmarketcap-exchangerate.git"
   },
   "bugs": {
-    "url": "https://github.com/droonacharyakochelo/cmc_er/issues"
+    "url": "https://github.com/droonacharyakochelo/coinmarketcap-exchangerate/issues"
   },
-  "homepage": "https://github.com/droonacharyakochelo/cmc_er#readme",
+  "homepage": "https://github.com/droonacharyakochelo/coinmarketcap-exchangerate#readme",
   "dependencies": {
     "axios": "^1.6.0",
     "dotenv": "^17.2.3"
