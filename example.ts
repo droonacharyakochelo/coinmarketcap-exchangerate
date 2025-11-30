@@ -4,13 +4,29 @@
  * Example script demonstrating how to use the coinmarketcap-exchangerate module
  */
 
+// Load environment variables from .env file if it exists
+require('dotenv').config();
+
 import { PriceFetcher } from './src';
 
 async function main() {
+  // Get tickers from command line arguments, or use defaults
   const args = process.argv.slice(2);
   const tickers = args.length > 0 ? args : ['BTC', 'ETH', 'EUR', 'JPY', 'DOT', 'BNB', 'CNY'];
   
-  const fetcher = new PriceFetcher();
+  // Get API keys from environment variables or .env file
+  // Or provide them manually here:
+  const cmcApiKey = process.env.CMC_API_KEY || undefined;
+  const erApiKey = process.env.ER_API_KEY || undefined;
+  
+  const fetcher = new PriceFetcher(cmcApiKey, erApiKey);
+  
+  // Display which mode we're using
+  if (cmcApiKey || erApiKey) {
+    console.log('Using provided API keys');
+  } else {
+    console.log('Using default sandbox mode (limited requests)');
+  }
   
   console.log('Fetching prices for:', tickers);
   console.log('----------------------------------------');
