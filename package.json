@@ -9,7 +9,8 @@
     "bundle": "terser dist/index.js -o dist/bundle.min.js -c -m",
     "prepare": "npm run build && npm run bundle",
     "test": "jest",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "example": "ts-node example.ts"
   },
   "keywords": [
     "coinmarketcap",
