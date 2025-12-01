@@ -1,6 +1,6 @@
 {
   "name": "coinmarketcap-exchangerate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A TypeScript module to fetch cryptocurrency prices from CoinMarketCap API and forex prices from ExchangeRate API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
