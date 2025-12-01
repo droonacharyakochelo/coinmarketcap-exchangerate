@@ -94,7 +94,7 @@ const prices = await fetcher.fetchPrices(['BTC', 'EUR']);
 
 
 ## Return Format
-The `fetchPrices()` method returns a Promise that resolves to an array of tuples in the format:
+The `fetchPrices()` method returns a Promise that resolves to an array of Ticker, Currency Name, Price:
 
 ```typescript
 [
